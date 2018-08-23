@@ -1,0 +1,50 @@
+{
+  "family": "api-n-redis-taskdef",
+  
+  "containerDefinitions": [
+    {
+      "name": "counter-api",
+      "image": "786148255523.dkr.ecr.us-west-2.amazonaws.com/counter-api",
+      "cpu": 256,
+      "memory": 250,
+      "entryPoint": [],
+      "environment": [],
+      "command": [],
+      "portMappings": [
+        {
+          "hostPort": 8080,
+          "containerPort": 8080
+        }
+      ],
+      "volumesFrom": [],
+      "links": [
+        "redis:redis"
+      ],
+      "mountPoints": [],
+      "essential": true
+    },
+	
+	
+    {
+      "name": "redis",
+      "image": "redis",
+      "cpu": 256,
+      "memory": 250,
+      "entryPoint": [],
+      "environment": [],
+      "command": [],
+      "portMappings": [
+        {
+          "hostPort": 6379,
+          "containerPort": 6379
+        }
+      ],
+      "volumesFrom": [],
+      "links": [],
+      "mountPoints": [],
+      "essential": true
+    }
+  ],
+  
+  "volumes": []
+}

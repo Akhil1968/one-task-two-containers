@@ -1,0 +1,2 @@
+aws ecs register-task-definition --region "us-west-2" --cli-input-json file://api_with_redis_taskdef.json
+
