@@ -1,7 +1,7 @@
 # one-task-two-containers
 A demo on AWS ECS service that runs two docker containers in one task
 
-STEPS----
+### STEPS:
 
 1. Create a EC2 instance using Amazon Linux AMI in a VPC tht has at least two public subnets
 2. Install docker and git using https://github.com/Akhil1968/one-task-two-containers/blob/master/install-docker-git.txt
